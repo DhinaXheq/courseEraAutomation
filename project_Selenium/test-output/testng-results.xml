@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="55549" started-at="2022-06-02T05:12:40Z" finished-at="2022-06-02T05:13:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="55549" started-at="2022-06-02T05:12:40Z" finished-at="2022-06-02T05:13:36Z">
+      <class name="Test_Project.Identify_courses">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Test_Project.Identify_courses@6ea12c19]" name="setup" is-config="true" duration-ms="23094" started-at="2022-06-02T10:42:17Z" finished-at="2022-06-02T10:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:Test_Project.Identify_courses@6ea12c19]" name="testCase1" duration-ms="23623" started-at="2022-06-02T10:42:40Z" finished-at="2022-06-02T10:43:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:Test_Project.Identify_courses@6ea12c19]" name="testCase2" duration-ms="14826" started-at="2022-06-02T10:43:04Z" finished-at="2022-06-02T10:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method status="PASS" signature="testcase3()[pri:0, instance:Test_Project.Identify_courses@6ea12c19]" name="testcase3" duration-ms="17061" started-at="2022-06-02T10:43:18Z" finished-at="2022-06-02T10:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test_Project.Identify_courses@6ea12c19]" name="closeBrowser" is-config="true" duration-ms="3374" started-at="2022-06-02T10:43:36Z" finished-at="2022-06-02T10:43:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Test_Project.Identify_courses -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
