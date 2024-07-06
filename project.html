@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Search Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #searchResults {
+            margin-top: 20px;
+        }
+        .result {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Simple Search Engine</h1>
+<input type="text" id="searchInput" placeholder="Enter search term">
+<button onclick="search()">Search</button>
+
+<div id="searchResults"></div>
+
+<script>
+    const dataMap = {
+        "apple": "A sweet, edible fruit produced by an apple tree.",
+        "applea": "A sweet, edible fruit produced by an apple tree.",
+        "banana": "An elongated, edible fruit produced by several kinds of large herbaceous flowering plants.",
+        "carrot": "A root vegetable, usually orange in color, though purple, black, red, white, and yellow cultivars exist.",
+        "date": "The fruit of the date palm, a tree native to Northern Africa and the Middle East.",
+        "eggplant": "A plant species in the nightshade family known for its edible fruit."
+    };
+
+    function search() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const resultsContainer = document.getElementById('searchResults');
+        resultsContainer.innerHTML = ''; // Clear previous results
+
+        const keys = Object.keys(dataMap);
+        let found = false;
+        keys.forEach(key => {
+            if (key.includes(input)) {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = 'result';
+                resultDiv.textContent = `${key}: ${dataMap[key]}`;
+                resultsContainer.appendChild(resultDiv);
+                found = true;
+            }
+        });
+
+        if (!found) {
+            resultsContainer.innerHTML = 'No results found';
+        }
+    }
+</script>
+
+</body>
+</html>
